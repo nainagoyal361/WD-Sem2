@@ -11,3 +11,4 @@ else if(marks>=70 && marks<80){
 else{
     console.log("Grade D")
 }
+
