@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowAura - Skincare Store</title>
+    <link rel="stylesheet" href="project.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <header>
+        <div class="logo">
+            GlowAura
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+    
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-icons">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+            onkeyup="searchProducts()">
+
+            <i class="fa-regular fa-heart"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Healthy Skin Starts Here</h1>
+
+            <p>
+                Science-backed skincare designed for glowing skin every day.
+            </p>
+
+            <button>
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section id="categories">
+
+        <h2 class="section-title">
+            Shop By Category
+        </h2>
+
+        <div class="category-buttons">
+
+            <button onclick="filterProducts('all')">All</button>
+            <button onclick="filterProducts('facewash')">Face Wash</button>
+            <button onclick="filterProducts('serum')">Serums</button>
+            <button onclick="filterProducts('sunscreen')">Sunscreen</button>
+            <button onclick="filterProducts('moisturizer')">Moisturizer</button>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+
+    <section id="products">
+
+        <h2 class="section-title">
+            Best Sellers
+        </h2>
+
+        <div class="product-container">
+
+            <div class="product-card facewash">
+                <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500" alt="">
+                <h3>Vitamin C Face Wash</h3>
+                <p>₹399</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card serum">
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" alt="">
+                <h3>Niacinamide Serum</h3>
+                <p>₹699</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card sunscreen">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500" alt="">
+                <h3>SPF 50 Sunscreen</h3>
+                <p>₹599</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card moisturizer">
+                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500" alt="">
+                <h3>Hydrating Moisturizer</h3>
+                <p>₹499</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card serum">
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500" alt="">
+                <h3>Vitamin C Serum</h3>
+                <p>₹749</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card facewash">
+                <img src="https://images.unsplash.com/photo-1601612628452-9e99ced43524?w=500" alt="">
+                <h3>Watermelon Face Wash</h3>
+                <p>₹449</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card moisturizer">
+                <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500" alt="">
+                <h3>Barrier Repair Cream</h3>
+                <p>₹649</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+            <div class="product-card sunscreen">
+                <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=500" alt="">
+                <h3>Tinted Sunscreen</h3>
+                <p>₹699</p>
+                <button onclick="addToCart()">Add To Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+
+        <h2>Get Beauty Tips & Offers</h2>
+
+        <input
+        type="email"
+        placeholder="Enter Email">
+
+        <button>
+            Subscribe
+        </button>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+        <div class="contact-form">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea placeholder="Message"></textarea>
+
+            <button>
+                Send Message
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>GlowAura</h3>
+
+        <p>
+            Beautiful Skin Starts Here.
+        </p>
+
+        <p>
+            © 2026 GlowAura. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="project.js"></script>
+
+</body>
+</html>

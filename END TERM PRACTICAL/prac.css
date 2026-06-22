@@ -1,0 +1,47 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color:floralwhite;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    width: 350px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+h1 {
+    color:#333;
+    font-size: 28px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
